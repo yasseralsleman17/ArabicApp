@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/books"
+    tools:context=".LearnOrPlayActivity">
+
+    <Button
+        android:id="@+id/learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="59dp"
+        android:text="هيا نتعلم"
+        android:textColor="@color/black"
+        android:backgroundTint="#ED6C98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="59dp"
+        android:text="هيا نلعب"
+        android:textColor="@color/black"
+        android:backgroundTint="#ED6C98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="22dp"
+        android:text="menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/listview_item"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginEnd="5dp"
+        android:background="#0EEF17"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/button_menu"
+        app:layout_constraintTop_toTopOf="@+id/button_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

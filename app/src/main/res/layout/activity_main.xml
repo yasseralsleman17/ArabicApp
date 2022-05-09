@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="193dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="@dimen/_210sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="@color/color_btn"
+        android:text="Register"
+        android:textColor="#00511B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:backgroundTint="#DFFFB9"
+        android:text="Login"
+        android:textColor="#00511B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_register"
+        app:layout_constraintStart_toStartOf="@+id/button_register"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
